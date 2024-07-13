@@ -427,3 +427,33 @@ font-family: 'Lobster', cursive;
     opacity: 1;
   }
 }
+@media screen and (max-width: 768px) {
+      #card {
+        transform: none;
+      }
+      
+      #card-front, #card-inside {
+        width: 100%;
+        left: 0;
+      }
+      
+      .polaroid {
+        width: 80%;
+        height: auto;
+      }
+      
+      #card h1 {
+        font-size: 40px;
+      }
+      
+      #card-inside {
+        font-size: 1em;
+      }
+      
+      .cake_and_velas {
+        bottom: 10%;
+      }
+      
+      #cake {
+        transform: scale(0.7);
+      }
