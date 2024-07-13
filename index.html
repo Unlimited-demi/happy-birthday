@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday | To My Life Partner</title>
+    <title>Happy Birthday Ayo | From Your Life Partner</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,49 +13,104 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
         }
-        .card {
+        .container {
             background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.2);
             overflow: hidden;
-            width: 300px;
-            max-width: 100%;
+            width: 80%;
+            max-width: 600px;
+            position: relative;
+        }
+        .image-wrapper {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
         }
         .card-image {
             width: 100%;
-            height: 200px;
+            height: 100%;
             object-fit: cover;
         }
         .card-content {
-            padding: 20px;
+            padding: 30px;
         }
         h1 {
             color: #ff4081;
             text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
         }
         p {
             color: #333;
             line-height: 1.6;
+            font-size: 1.1em;
         }
         .signature {
             text-align: right;
             font-style: italic;
             margin-top: 20px;
+            font-size: 1.2em;
+            color: #ff4081;
+        }
+        .balloon {
+            position: absolute;
+            width: 30px;
+            height: 40px;
+            background: #ff4081;
+            border-radius: 50%;
+            animation: float 5s ease-in-out infinite;
+        }
+        .balloon::before {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #ff4081;
+            border-radius: 50%;
+            bottom: -5px;
+            left: 10px;
+        }
+        .balloon::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 50px;
+            background: #ff4081;
+            bottom: -50px;
+            left: 14px;
+        }
+        .balloon:nth-child(2) { left: 20%; top: 20%; animation-delay: 1s; }
+        .balloon:nth-child(3) { right: 20%; top: 30%; animation-delay: 2s; }
+        .balloon:nth-child(4) { left: 10%; bottom: 20%; animation-delay: 3s; }
+        .balloon:nth-child(5) { right: 10%; bottom: 30%; animation-delay: 4s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
         }
     </style>
 </head>
 <body>
-    <div class="card">
-        <img src="WhatsApp Image 2024-06-02 at 17.24.14_c2308acf.jpg" alt="Birthday Image" class="card-image">
+    <div class="container">
+        <div class="image-wrapper">
+            <img src="WhatsApp Image 2024-06-02 at 17.24.14_c2308acf.jpg" alt="Birthday Image" class="card-image">
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+        </div>
         <div class="card-content">
-            <h1>Happy Birthday Love</h1>
-            <p>My life partner,</p>
+            <h1>Happy Birthday Ayo!</h1>
+            <p>My dearest Ayo, my life partner,</p>
             <p>On this special day, I want to take a moment to tell you how much you mean to me. Your love has been a beacon of light in my life, guiding me through both the brightest and darkest of times.</p>
-            <p>Your kindness, your laughter, and your unwavering support have made my world a better place. You've been there for every triumph and every setback, always ready with a listening ear or a comforting hug.</p>
-            <p>As you celebrate another year of life, I hope you know how truly cherished you are. May this year bring you all the happiness, success, and love that you so richly deserve.</p>
+            <p>Ayo, your kindness, your laughter, and your unwavering support have made my world a better place. You've been there for every triumph and every setback, always ready with a listening ear or a comforting hug.</p>
+            <p>As you celebrate another year of life, I hope you know how truly cherished you are. May this year bring you, my dear Ayo, all the happiness, success, and love that you so richly deserve.</p>
             <p>Thank you for being you – brilliant, compassionate, and irreplaceable.</p>
-            <p class="signature">You are my ride or die, I love you!</p>
+            <p class="signature">You are my ride or die, I love you Ayo!</p>
         </div>
     </div>
 </body>
